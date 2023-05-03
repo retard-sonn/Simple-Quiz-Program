@@ -3,7 +3,7 @@ Simple Quiz Program by Abraar | @retard.sonn
 
 It is a open source program made for tutorials
 '''
-
+from colorama import Fore
 from art import *
 import time
 
@@ -62,7 +62,7 @@ ans3 = "assamese"
 ########################################
 
 print("Questions will pop up soon ....".center(100))
-print("NOTE: ANSWER ONLY IN WORDS! (NOT IN NUMBERS)\nEXTRAORDINARY ANSWERS WILL NOT BE ACCEPTED!".center(50))
+print("NOTE: ANSWER ONLY IN WORDS! (NOT IN NUMBERS)\nEXTRAORDINARY ANSWERS WILL NOT BE ACCEPTED!\n".center(50))
 time.sleep(5)
 
 score = 0
@@ -98,9 +98,13 @@ time.sleep(1)
 
 if score == 3:
     print("Congrats! All of your answers are correct!")
+    time.sleep(5)
 elif score == 2:
     print("Good! Only 1 answer is incorrect..")
+    time.sleep(5)
 elif score == 1:
     print("You scored only 1 out of 3 :( !")
+    time.sleep(5)
 else:
     print("Better luck next time! All of your answers are incorrect!")
+    time.sleep(5)
